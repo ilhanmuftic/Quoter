@@ -1,0 +1,9 @@
+<div class="chapter-list">
+    <a *ngFor="let chapter of chapters" routerLink="/books/{{book_id}}/chapters/{{chapter.id}}">
+        <app-chapter-card [chapter]="chapter"></app-chapter-card>
+    </a>
+
+    <a routerLink="/books/{{book_id}}/new-chapter">
+        <ion-fab-button style="font-size: 33px;">+</ion-fab-button>
+    </a>
+</div>

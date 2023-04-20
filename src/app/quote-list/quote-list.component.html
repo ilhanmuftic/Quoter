@@ -1,0 +1,11 @@
+
+<div class="quote-list">
+
+    <app-quote-card [quote]="quote.quote" *ngFor="let quote of quotes" class="quote-card"></app-quote-card>
+
+</div>
+
+    <a routerLink="{{url}}/new-quote" style="width: fit-content; margin: auto;position: fixed;right: 10%;bottom: 10%;">
+        <ion-fab-button style="font-size: 33px;">+</ion-fab-button>
+    </a>
+

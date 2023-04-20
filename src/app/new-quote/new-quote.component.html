@@ -1,0 +1,13 @@
+<h1>Create a New Quote</h1>
+<form [formGroup]="newQuoteForm" (ngSubmit)="onSubmit()">
+    <ion-item>
+        <ion-label>Quote:</ion-label>
+        <ion-textarea formControlName="quote"></ion-textarea>
+      </ion-item>
+  <ion-item>
+    <ion-label>Page:</ion-label>
+    <ion-input formControlName="page" type="number"></ion-input>
+  </ion-item>
+
+  <ion-button type="submit">Create Quote</ion-button>
+</form>

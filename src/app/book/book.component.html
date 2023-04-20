@@ -1,0 +1,4 @@
+<h1>{{book.title}}</h1>
+<h3 style="font-weight: normal;">{{book.author}}</h3>
+<ion-back-button routerLink="/home" text="Go Back" style="display: block;width: fit-content;"></ion-back-button>
+<app-chapter-list [book_id]="book.id"></app-chapter-list>

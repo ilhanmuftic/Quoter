@@ -1,0 +1,8 @@
+<h1>Create a New Chapter</h1>
+<form [formGroup]="newChapterForm" (ngSubmit)="onSubmit()">
+  <ion-item>
+    <ion-label>Name:</ion-label>
+    <ion-input formControlName="name" type="text"></ion-input>
+  </ion-item>
+  <ion-button type="submit">Create Chapter</ion-button>
+</form>

@@ -1,0 +1,12 @@
+<h1>Create a New Book</h1>
+<form [formGroup]="newBookForm" (ngSubmit)="onSubmit()">
+  <ion-item>
+    <ion-label>Title:</ion-label>
+    <ion-input formControlName="title" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Author:</ion-label>
+    <ion-input formControlName="author" type="text"></ion-input>
+  </ion-item>
+  <ion-button type="submit">Create Book</ion-button>
+</form>

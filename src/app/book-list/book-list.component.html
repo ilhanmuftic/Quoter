@@ -1,0 +1,9 @@
+<div class="book-list">
+    <a *ngFor="let book of books" routerLink="/books/{{book.id}}">
+        <app-book-card [book]="book"></app-book-card>
+    </a>
+
+    <a routerLink="/new-book">
+        <ion-fab-button style="font-size: 33px;">+</ion-fab-button>
+    </a>
+</div>
